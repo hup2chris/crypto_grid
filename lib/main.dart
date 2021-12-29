@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:crypto_grid/cg_screen.dart';
-import 'package:crypto_grid/about.dart';
+//import 'package:crypto_grid/about.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:universal_platform/universal_platform.dart';
 
@@ -11,10 +11,12 @@ void main() {
     MobileAds.instance.initialize();
   }
 
-  runApp(Crypto_Grid());
+  //runApp(Crypto_Grid());
+  runApp(MyApp());
 }
 
-class Crypto_Grid extends StatelessWidget {
+class MyApp extends StatelessWidget {
+//class Crypto_Grid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +26,7 @@ class Crypto_Grid extends StatelessWidget {
       initialRoute: PriceScreen.id,
       routes: {
         PriceScreen.id: (context) => PriceScreen(),
-        About.id: (context) => About(),
+        //About.id: (context) => About(),
       },
       debugShowCheckedModeBanner: false,
     );

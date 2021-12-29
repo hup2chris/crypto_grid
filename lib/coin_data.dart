@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:crypto_grid/hid/hid.dart';
+//import 'package:crypto_grid/hid/hid.dart';
 
 
 const ccAllAPIURL = 'https://min-api.cryptocompare.com/data/v2/news/?lang=EN';
